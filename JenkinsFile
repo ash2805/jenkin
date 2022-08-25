@@ -1,0 +1,13 @@
+stage("DEPLOY CONTAINER"){
+        steps {
+            script {
+                    sh """
+                    #!/bin/bash
+                    sudo ssh ec2-user@18.118.49.30 << EOF
+                    sudo mkdir /tmp
+                    exit 0
+                    << EOF
+                    """
+                }
+        }
+    }
