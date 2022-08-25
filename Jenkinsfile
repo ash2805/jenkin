@@ -1,4 +1,4 @@
-stage("DEPLOY CONTAINER"){
+stages("DEPLOY CONTAINER"){
         steps {
             script {
                     sh """
